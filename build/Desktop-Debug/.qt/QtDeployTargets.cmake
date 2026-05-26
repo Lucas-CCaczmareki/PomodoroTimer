@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_PomodoroTimer_FILE /home/lucascacz/_Programs/personal-projects/PomodoroTimer/build/Desktop-Debug/PomodoroTimer)
+set(__QT_DEPLOY_TARGET_PomodoroTimer_TYPE EXECUTABLE)
