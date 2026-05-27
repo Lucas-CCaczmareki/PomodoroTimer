@@ -1,0 +1,25 @@
+# ====================================================================
+# Arquivos de Configuração Locais do Qt Creator e CMake
+# ====================================================================
+
+# Ignora os arquivos que guardam os caminhos dos compiladores da sua máquina
+*.user
+*.user.*
+CMakeLists.txt.user
+project.json.user
+
+# Ignora as pastas ocultas de cache que o Qt Creator cria no Windows/Linux
+.qtcreator/
+.cmake/
+
+# ====================================================================
+# Pastas de Compilação (Builds)
+# ====================================================================
+
+# Ignora qualquer pasta de build padrão do Qt Creator (ex: build-PomodoroTimer-...)
+build-*/
+
+# Ignora se você criar uma pasta chamada simplesmente "build" na raiz
+build/
+CMakeCache.txt
+CMakeFiles/
