@@ -3,8 +3,6 @@
 
 #include <QMainWindow>
 #include <QTimer>
-#include <thread>
-#include <chrono>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,12 +19,16 @@ public:
     ~MainWindow() override;
 
 private slots:
-    void on_btnPausar_clicked();
-    void updateClock();
+    void updateClock(); // evento que vai ser disparado pelo clock
+
+    void on_btnIniciar_clicked();
+    void on_btnReset_clicked();
+    void on_btnPausar_clicked(bool checked);
 
 private:
     Ui::MainWindow *ui;
-    QTimer *clock;
+    QTimer *clock; //cria um clock que vai disparar um evento
     int remainingTime;
+    bool f_rest;
 };
 #endif // MAINWINDOW_H
